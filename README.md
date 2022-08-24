@@ -28,7 +28,7 @@ NOTE: this has been tested on a Ubuntu 18.04.6 machine, with a Tesla V100-SXM2-1
 
 We use in Dockerfile nvidia/cuda:11.3.0-cudnn8-devel-ubuntu20.04 as base image and recommend using the same.
 
-`git@gitlab.vtti.vt.edu:ctbs/fhwa-cv/action-recognition/mmaction2.git`
+`git clone https://github.com/VTTI/driver-secondary-action-recognition.git`
 
 `cd mmdaction2`
 
