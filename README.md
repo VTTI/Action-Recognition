@@ -14,7 +14,7 @@ For details about the method and quantitative results please check the MMAction2
 
 `registry.gitlab.vtti.vt.edu/ctbs/fhwa-cv/action-recognition/mmaction2/mmaction2:latest /bin/bash`
 
-### Downloading the image
+#### Downloading the image
 
 Download the image and copy the path where it is saved
 
