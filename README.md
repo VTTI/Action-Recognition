@@ -10,7 +10,7 @@ For details about the method and quantitative results please check the MMAction2
 
 ### Use pre-built docker image
 
-Login to Docker first
+Sign in to the Container registry service at `ghcr.io`
 
 `docker pull ghcr.io/akashsonth/action-recognition:latest`
 
