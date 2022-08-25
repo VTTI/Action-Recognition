@@ -10,15 +10,7 @@ For details about the method and quantitative results please check the MMAction2
 
 ### Use pre-built docker image
 
-#### Using Gitlab container registry path (make sure to login)
-
-`registry.gitlab.vtti.vt.edu/ctbs/fhwa-cv/action-recognition/mmaction2/mmaction2:latest /bin/bash`
-
-#### Downloading the image
-
-Download the image and copy the path where it is saved
-
-`docker load -i <path to image tar file>`
+`docker pull ghcr.io/akashsonth/action-recognition:latest`
 
 `docker run -it --rm --runtime=nvidia -v {{dataPath}}:/data mmaction2 /bin/bash`
 
