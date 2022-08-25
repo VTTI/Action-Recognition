@@ -26,9 +26,9 @@ We use in Dockerfile nvidia/cuda:11.3.0-cudnn8-devel-ubuntu20.04 as base image a
 
 `cd mmdaction2`
 
-`docker build . -t mmaction2`
+`docker build . -t action-recognition`
  
-`docker run -it --rm --runtime=nvidia -v {{dataPath}}:/data mmaction2 /bin/bash`
+`docker run -it --rm --runtime=nvidia -v {{dataPath}}:/data action-recognition /bin/bash`
 
 ( replace {{dataPath}} with the local folder on your computer containing [input folder] and where the outuput is expected to be stored)
 
