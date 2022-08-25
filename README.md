@@ -10,9 +10,11 @@ For details about the method and quantitative results please check the MMAction2
 
 ### Use pre-built docker image
 
+Login to Dorcker first
+
 `docker pull ghcr.io/akashsonth/action-recognition:latest`
 
-`docker run -it --rm --runtime=nvidia -v {{dataPath}}:/data mmaction2 /bin/bash`
+`docker run -it --rm --runtime=nvidia -v {{dataPath}}:/data action-recognition /bin/bash`
 
 ### Build from scratch
 
