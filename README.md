@@ -35,49 +35,6 @@ We use in Dockerfile nvidia/cuda:11.3.0-cudnn8-devel-ubuntu20.04 as base image a
 `export TORCH_HOME=.` (NOTE: Use this command so that PyTorch can download the pre-trained checkpoints to the current project folder)
 
 
-`python {{PYTHON_FILENAME}} --input {{INPUT_PATH}} --config {{CONFIG_FILE_PATH}} --gpu {{GPU_ID}} --output {{OUTPUT_PATH}}`
-
-## Examples
-
-Input video
-
-![](sample/input/input.gif) 
-
-#### Action Recognition models
-
-In the file `latest_long_video.yaml`, replace the value of the parameters- `configFile`, `checkpoint`, and `label` with the required model parameters. The available options are provided in https://mmaction2.readthedocs.io/en/latest/recognition_models.html
-
-`python demo_long_video.py --input ./sample/input/input.mp4 --config latest_long_video.yaml --gpu 0 --output ./sample/output/long_video.mp4`
-
-![](sample/output/long_video.gif)
-
-The initial few frames are required for instatiating the model in the case of Action Recognition models, and there are no predictions till then.
-
-| frame_no | detection | label | confidence | x_min | y_min | x_max | y_max |
-| :-------------: |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-| 40 | 0 |  texting | 0.56 | | | | |
-| 40 | 1 |  driving car | 0.23 | | | | |
-| 40 | 1 |  changing oil | 0.07 | | | | |
-| . | . | . | . | | | | |
-| . | . | . | . | | | | |
-
-#### Spatio Temporal Action Detection models
-
-In the file `latest_spatiotemporal.yaml`, replace the value of the parameters- `configFile`, `checkpoint`, `detConfig`, `detCheckpoint`, and `labelMap` with the required model parameters. The available options are provided in https://mmaction2.readthedocs.io/en/latest/detection_models.html
-
-`python demo_spatiotemporal.py --input ./sample/input/input.mp4 --config latest_spatiotemporal.yaml --gpu 0 --output ./sample/output/spatiotemporal.mp4`
-
-![](sample/output/spatiotemporal.gif)
-
-| frame_no | detection | label | confidence | x_min | y_min | x_max | y_max |
-| :-------------: |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-| 4 | 0 |  sit | 0.97403955 | 163 | 7 | 434 | 446 |
-| 4 | 0 |  talk to ... | 0.53955054 | 163 | 7 | 434 | 446 |
-| 5 | 0 |  sit | 0.97403955 | 163 | 7 | 434 | 446 |
-| . | . | . | . | . | . | . | . |
-| . | . | . | . | . | . | . | . |
-
-
 ## Training one of the MMAction2 models
 
 Firsly, prepare a folder `train` containing all the video files to be used for training. Create an empty text file `train.txt`. In each line of this text file, you wll have the video name, followed by a space, followed by its class index. Perform a similar action for the validation dataset (`val` video directory and `val.txt` text file)
@@ -90,7 +47,14 @@ VID00031_0003.mp4 8
         .         .
 ```
 
-Currently this repo supports three Action Recognition Models-
+In the Docker container, execute the command `python SELECTED_TRAIN_FILE CONFIG_FILE`
+
+Currently this repo supports three Action Recognition Models. Based on the model selected, you will use either `train_tsn.py`, `train_slowfast.py`, or `train_tanet.py` as the `SELECTED_TRAIN_FILE`
+
+In the suitable python train file, you will make the following changes-
+- Edit `cfg.model.cls_head.num_classes = 10` to the number of classes in your dataset
+- Modify the path `cfg.work_dir` to your required folder where all the model weights will be saved
+- Modify the paths of train videos, val videos, and their corresponding text files
 
 ### [TSN](https://mmaction2.readthedocs.io/en/latest/recognition_models.html#tsn)
 This is the MMAction2 implementation of [Temporal segment networks: Towards good practices for deep action recognition](https://link.springer.com/chapter/10.1007/978-3-319-46484-8_2)
@@ -133,12 +97,3 @@ Download the checkpoint from https://mirror.vtti.vt.edu/vtti/ctbs/action_recogni
 ![](sample/output/VID00026_0042_tanet_AdobeCreativeCloudExpress.gif) 
 ![](sample/output/VID00026_0048_tanet_AdobeCreativeCloudExpress.gif) 
 ![](sample/output/VID00026_0058_tanet_AdobeCreativeCloudExpress.gif)
-
-Based on the model selected, you will use either `train_tsn.py`, `train_slowfast.py`, or `train_tanet.py` as the `SELECTED_TRAIN_FILE`
-
-In the suitable python train file, you will make the following changes-
-- Edit `cfg.model.cls_head.num_classes = 10` to the number of classes in your dataset
-- Modify the path `cfg.work_dir` to your required folder where all the model weights will be saved
-- Modify the paths of train videos, val videos, and their corresponding text files
-
-In the Docker container, execute the command `python SELECTED_TRAIN_FILE CONFIG_FILE`
