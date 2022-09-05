@@ -73,6 +73,7 @@ Download the checkpoint from https://mirror.vtti.vt.edu/vtti/ctbs/action_recogni
 Metrics on PoseML-
 Top 1 Accuracy: 76.19%
 Top 3 Accuracy: 88.54%
+
 <img src="sample/tsn_confMat.png" width="50%" height="50%">
 
 
@@ -94,6 +95,7 @@ Download the checkpoint from https://mirror.vtti.vt.edu/vtti/ctbs/action_recogni
 Metrics on PoseML-
 Top 1 Accuracy: 71.48%
 Top 3 Accuracy: 87.97%
+
 <img src="sample/slowfast__confMat.png" width="50%" height="50%">
 
 
@@ -115,4 +117,5 @@ Download the checkpoint from https://mirror.vtti.vt.edu/vtti/ctbs/action_recogni
 Metrics on PoseML-
 Top 1 Accuracy: 80.41%
 Top 3 Accuracy: 90.72%
+
 <img src="sample/tam__confMat.png" width="50%" height="50%">
