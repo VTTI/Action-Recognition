@@ -49,7 +49,7 @@ VID00031_0003.mp4 8
 
 In the Docker container, execute the command `python train.py CONFIG_FILE`
 
-In the python train file, you will make the following changes-
+Make the following changes in the `train.py` file-
 - Edit `cfg.model.cls_head.num_classes = 10` to the number of classes in your dataset
 - Modify the path `cfg.work_dir` to your required folder where all the model weights will be saved
 - Modify the paths of train videos, val videos, and their corresponding text files
