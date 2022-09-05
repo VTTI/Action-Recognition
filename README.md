@@ -74,7 +74,7 @@ Metrics on PoseML-
 Top 1 Accuracy: 76.19%,
 Top 3 Accuracy: 88.54%
 
-<img src="sample/tsn_confMat.png" width="50%" height="50%">
+<img src="sample/tsn_confMat.png" width="60%" height="60%">
 
 
 ### [SlowFast](https://mmaction2.readthedocs.io/en/latest/recognition_models.html#slowfast)
@@ -96,7 +96,7 @@ Metrics on PoseML-
 Top 1 Accuracy: 71.48%,
 Top 3 Accuracy: 87.97%
 
-<img src="sample/slowfast__confMat.png" width="50%" height="50%">
+<img src="sample/slowfast__confMat.png" width="60%" height="60%">
 
 
 ### [TANet](https://mmaction2.readthedocs.io/en/latest/recognition_models.html#tanet)
@@ -118,4 +118,4 @@ Metrics on PoseML-
 Top 1 Accuracy: 80.41%,
 Top 3 Accuracy: 90.72%
 
-<img src="sample/tam__confMat.png" width="50%" height="50%">
+<img src="sample/tam__confMat.png" width="60%" height="60%">
