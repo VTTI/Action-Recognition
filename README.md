@@ -70,7 +70,8 @@ Download the checkpoint from https://mirror.vtti.vt.edu/vtti/ctbs/action_recogni
 ![](sample/output/VID00026_0048_tsn_AdobeCreativeCloudExpress.gif) 
 ![](sample/output/VID00026_0058_tsn_AdobeCreativeCloudExpress.gif)
 
-![](sample/tsn_confMat.png)
+<img src="sample/tsn_confMat.png" width="20%" height="20%">
+
 
 ### [SlowFast](https://mmaction2.readthedocs.io/en/latest/recognition_models.html#slowfast)
 This is the MMAction2 implementation of [SlowFast Networks for Video Recognition](https://openaccess.thecvf.com/content_ICCV_2019/html/Feichtenhofer_SlowFast_Networks_for_Video_Recognition_ICCV_2019_paper.html)
@@ -86,7 +87,8 @@ Download the checkpoint from https://mirror.vtti.vt.edu/vtti/ctbs/action_recogni
 ![](sample/output/VID00026_0048_slowfast_AdobeCreativeCloudExpress.gif) 
 ![](sample/output/VID00026_0058_slowfast_AdobeCreativeCloudExpress.gif)
 
-![](sample/slowfast_confMat.png)
+<img src="sample/slowfast_confMat.png" width="20%" height="20%">
+
 
 ### [TANet](https://mmaction2.readthedocs.io/en/latest/recognition_models.html#tanet)
 This is the MMAction2 implementation of [TAM: Temporal Adaptive Module for Video Recognition](https://openaccess.thecvf.com/content/ICCV2021/html/Liu_TAM_Temporal_Adaptive_Module_for_Video_Recognition_ICCV_2021_paper.html)
@@ -102,4 +104,4 @@ Download the checkpoint from https://mirror.vtti.vt.edu/vtti/ctbs/action_recogni
 ![](sample/output/VID00026_0048_tanet_AdobeCreativeCloudExpress.gif) 
 ![](sample/output/VID00026_0058_tanet_AdobeCreativeCloudExpress.gif)
 
-![](sample/tam_confMat.png)
+<img src="sample/tam_confMat.png" width="20%" height="20%">
