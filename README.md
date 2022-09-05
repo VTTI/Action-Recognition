@@ -70,7 +70,7 @@ Download the checkpoint from https://mirror.vtti.vt.edu/vtti/ctbs/action_recogni
 ![](sample/output/VID00026_0048_tsn_AdobeCreativeCloudExpress.gif) 
 ![](sample/output/VID00026_0058_tsn_AdobeCreativeCloudExpress.gif)
 
-<img src="sample/tsn_confMat.png" width="20%" height="20%">
+<img src="sample/tsn_confMat.png" width="50%" height="50%">
 
 
 ### [SlowFast](https://mmaction2.readthedocs.io/en/latest/recognition_models.html#slowfast)
@@ -87,7 +87,7 @@ Download the checkpoint from https://mirror.vtti.vt.edu/vtti/ctbs/action_recogni
 ![](sample/output/VID00026_0048_slowfast_AdobeCreativeCloudExpress.gif) 
 ![](sample/output/VID00026_0058_slowfast_AdobeCreativeCloudExpress.gif)
 
-<img src="sample/slowfast_confMat.png" width="20%" height="20%">
+<img src="sample/slowfast_confMat.png" width="50%" height="50%">
 
 
 ### [TANet](https://mmaction2.readthedocs.io/en/latest/recognition_models.html#tanet)
@@ -104,4 +104,4 @@ Download the checkpoint from https://mirror.vtti.vt.edu/vtti/ctbs/action_recogni
 ![](sample/output/VID00026_0048_tanet_AdobeCreativeCloudExpress.gif) 
 ![](sample/output/VID00026_0058_tanet_AdobeCreativeCloudExpress.gif)
 
-<img src="sample/tam_confMat.png" width="20%" height="20%">
+<img src="sample/tam_confMat.png" width="50%" height="50%">
