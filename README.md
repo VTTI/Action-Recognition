@@ -47,14 +47,14 @@ VID00031_0003.mp4 8
         .         .
 ```
 
-In the Docker container, execute the command `python SELECTED_TRAIN_FILE CONFIG_FILE`
+In the Docker container, execute the command `python train.py CONFIG_FILE`
 
-Currently this repo supports three Action Recognition Models. Based on the model selected, you will use either `train_tsn.py`, `train_slowfast.py`, or `train_tanet.py` as the `SELECTED_TRAIN_FILE`
-
-In the suitable python train file, you will make the following changes-
+In the python train file, you will make the following changes-
 - Edit `cfg.model.cls_head.num_classes = 10` to the number of classes in your dataset
 - Modify the path `cfg.work_dir` to your required folder where all the model weights will be saved
 - Modify the paths of train videos, val videos, and their corresponding text files
+
+Currently this repo supports three Action Recognition Models-
 
 ### [TSN](https://mmaction2.readthedocs.io/en/latest/recognition_models.html#tsn)
 This is the MMAction2 implementation of [Temporal segment networks: Towards good practices for deep action recognition](https://link.springer.com/chapter/10.1007/978-3-319-46484-8_2)
