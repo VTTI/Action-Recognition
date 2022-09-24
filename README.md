@@ -1,8 +1,6 @@
 # General overview
 
-MMAction2 is an open-source toolbox for video understanding based on PyTorch. It is a part of the OpenMMLab project. In this repo we provide a working Dockerfile, and python scripts to process videos for action recognition using the the Action Recognition Models, and the Spatio Temporal Action Detection Models. We have performed experiments on the following datasets-
-1. PoseML: RGB videos of drivers
-2. SHRP2: Low-quality videos of drivers
+MMAction2 is an open-source toolbox for video understanding based on PyTorch. It is a part of the OpenMMLab project. In this repo we provide a working Dockerfile, and python scripts to process videos for action recognition using the the Action Recognition Models, and the Spatio Temporal Action Detection Models. We have performed experiments on 2 datasets- PoseML (RGB videos of drivers) and SHRP2 (Low-quality videos of drivers)
 
 The files required to test an mmaction2 model are : checkpoint(s) (`.pth`), config_file (`.py`) and classes_file(`.txt`).
 
@@ -65,12 +63,14 @@ Value of `CONFIG_FILE` for this case is `configs/recognition/tsn/tsn_r50_1x1x3_1
 
 Download the checkpoint from https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tsn_r50_1x1x3_100e_kinetics400_rgb_20200614-e508be42.pth, and move it `./checkpoints`
 
+<!--
 ![](sample/output/VID00026_0005_tsn_AdobeCreativeCloudExpress.gif) 
 ![](sample/output/VID00026_0023_tsn_AdobeCreativeCloudExpress.gif) 
 ![](sample/output/VID00026_0035_tsn_AdobeCreativeCloudExpress.gif)
 ![](sample/output/VID00026_0042_tsn_AdobeCreativeCloudExpress.gif) 
 ![](sample/output/VID00026_0048_tsn_AdobeCreativeCloudExpress.gif) 
 ![](sample/output/VID00026_0058_tsn_AdobeCreativeCloudExpress.gif)
+ -->
 
 Metrics on PoseML-
 Top 1 Accuracy: 76.19%,
@@ -86,13 +86,14 @@ Value of `CONFIG_FILE` for this case is `configs/recognition/slowfast/slowfast_r
 
 Download the checkpoint from https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/slowfast_r50_256p_4x16x1_256e_kinetics400_rgb_20200728-145f1097.pth, and move it `./checkpoints`
 
+<!--
 ![](sample/output/VID00026_0005_slowfast_AdobeCreativeCloudExpress.gif) 
 ![](sample/output/VID00026_0023_slowfast_AdobeCreativeCloudExpress.gif) 
 ![](sample/output/VID00026_0035_slowfast_AdobeCreativeCloudExpress.gif)
 ![](sample/output/VID00026_0042_slowfast_AdobeCreativeCloudExpress.gif) 
 ![](sample/output/VID00026_0048_slowfast_AdobeCreativeCloudExpress.gif) 
 ![](sample/output/VID00026_0058_slowfast_AdobeCreativeCloudExpress.gif)
-
+-->
 
 Metrics on PoseML-
 Top 1 Accuracy: 71.48%,
@@ -108,13 +109,14 @@ Value of `CONFIG_FILE` for this case is `configs/recognition/tanet/tanet_r50_den
 
 Download the checkpoint from https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tanet_r50_dense_1x1x8_100e_kinetics400_rgb_20210219-032c8e94.pth, and move it `./checkpoints`
 
+<!--
 ![](sample/output/VID00026_0005_tanet_AdobeCreativeCloudExpress.gif) 
 ![](sample/output/VID00026_0023_tanet_AdobeCreativeCloudExpress.gif) 
 ![](sample/output/VID00026_0035_tanet_AdobeCreativeCloudExpress.gif)
 ![](sample/output/VID00026_0042_tanet_AdobeCreativeCloudExpress.gif) 
 ![](sample/output/VID00026_0048_tanet_AdobeCreativeCloudExpress.gif) 
 ![](sample/output/VID00026_0058_tanet_AdobeCreativeCloudExpress.gif)
-
+-->
 
 Metrics on PoseML-
 Top 1 Accuracy: 80.41%,
