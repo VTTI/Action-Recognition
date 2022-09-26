@@ -32,7 +32,22 @@ We use in Dockerfile nvidia/cuda:11.3.0-cudnn8-devel-ubuntu20.04 as base image a
 
 ( replace {{dataPath}} with the local folder on your computer containing [input folder] and where the outuput is expected to be stored)
 
-`export TORCH_HOME=.` (NOTE: Use this command so that PyTorch can download the pre-trained checkpoints to the current project folder)
+In the file `latest_long_video.yaml`, replace the value of the parameters- `configFile`, `checkpoint`, and `label` with the required model parameters. The available options are provided in https://mmaction2.readthedocs.io/en/latest/recognition_models.html
+
+`python demo_long_video.py --input INPUT_VIDEO_PATH -- config latest_long_video.yaml  --output OUTPUT_VIDEO_PATH`
+
+Ex: 
+`python demo_long_video.py --input ./sample/input/input.mp4 --config latest_long_video.yaml --device cuda:0 --output ./sample/output/long_video.mp4`
+
+The initial few frames are required for instatiating the model in the case of Action Recognition models, and there are no predictions till then.
+
+| frame_no | detection | label | confidence | x_min | y_min | x_max | y_max |
+| :-------------: |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+| 40 | 0 |  texting | 0.56 | | | | |
+| 40 | 1 |  driving car | 0.23 | | | | |
+| 40 | 1 |  changing oil | 0.07 | | | | |
+| . | . | . | . | | | | |
+| . | . | . | . | | | | |
 
 
 ## Training one of the MMAction2 models
