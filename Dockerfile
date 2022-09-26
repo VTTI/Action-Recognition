@@ -32,3 +32,4 @@ ENV FORCE_CUDA="1"
 RUN pip install cython --no-cache-dir
 RUN pip install --no-cache-dir -e .
 RUN cp base.py mmaction/datasets/
+RUN export TORCH_HOME=.
