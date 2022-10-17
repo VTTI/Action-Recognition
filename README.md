@@ -94,6 +94,7 @@ Top 3 Accuracy: 88.54%
 <img src="sample/tsn_confMat.png" width="60%" height="60%">
 
 The trained weights for the PoseML dataset are provided: https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tsn_PoseML_epoch20.pth
+
 The trained weights for the SHRP2 dataset are provided: https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tanet_SHRP2_epoch10.pth
 
 
@@ -120,6 +121,7 @@ Top 3 Accuracy: 87.97%
 <img src="sample/slowfast_confMat.png" width="60%" height="60%">
 
 The trained weights for the PoseML dataset are provided: https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/slowfast_PoseML6sec_epoch65.pth
+
 The trained weights for the SHRP2 dataset are provided: https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tanet_SHRP2_epoch95.pth
 
 
@@ -146,4 +148,5 @@ Top 3 Accuracy: 90.72%
 <img src="sample/tam_confMat.png" width="60%" height="60%">
 
 The trained weights for the PoseML dataset are provided: https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tanet_PoseML6sec_epoch35.pth
+
 The trained weights for the SHRP2 dataset are provided: https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tanet_SHRP2_epoch30.pth
