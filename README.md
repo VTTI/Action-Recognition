@@ -39,7 +39,7 @@ In the file `latest_long_video.yaml`, replace the value of the parameters- `conf
 Ex: 
 `python demo_long_video.py --input ./sample/input/input.mp4 --config latest_long_video.yaml --device cuda:0 --output ./sample/output/long_video.mp4`
 
-The initial few frames are required for instatiating the model in the case of Action Recognition models, and there are no predictions till then.
+The initial few frames are required for instantiating the model, and there are no predictions till then.
 
 | frame_no | detection | label | confidence | x_min | y_min | x_max | y_max |
 | :-------------: |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
