@@ -93,6 +93,9 @@ Top 3 Accuracy: 88.54%
 
 <img src="sample/tsn_confMat.png" width="60%" height="60%">
 
+The trained weights for the PoseML dataset are provided: https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tsn_PoseML_epoch20.pth
+The trained weights for the SHRP2 dataset are provided: https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tanet_SHRP2_epoch10.pth
+
 
 ### [SlowFast](https://mmaction2.readthedocs.io/en/latest/recognition_models.html#slowfast)
 This is the MMAction2 implementation of [SlowFast Networks for Video Recognition](https://openaccess.thecvf.com/content_ICCV_2019/html/Feichtenhofer_SlowFast_Networks_for_Video_Recognition_ICCV_2019_paper.html)
@@ -116,6 +119,9 @@ Top 3 Accuracy: 87.97%
 
 <img src="sample/slowfast_confMat.png" width="60%" height="60%">
 
+The trained weights for the PoseML dataset are provided: https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/slowfast_PoseML6sec_epoch65.pth
+The trained weights for the SHRP2 dataset are provided: https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tanet_SHRP2_epoch95.pth
+
 
 ### [TANet](https://mmaction2.readthedocs.io/en/latest/recognition_models.html#tanet)
 This is the MMAction2 implementation of [TAM: Temporal Adaptive Module for Video Recognition](https://openaccess.thecvf.com/content/ICCV2021/html/Liu_TAM_Temporal_Adaptive_Module_for_Video_Recognition_ICCV_2021_paper.html)
@@ -138,3 +144,6 @@ Top 1 Accuracy: 80.41%,
 Top 3 Accuracy: 90.72%
 
 <img src="sample/tam_confMat.png" width="60%" height="60%">
+
+The trained weights for the PoseML dataset are provided: https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tanet_PoseML6sec_epoch35.pth
+The trained weights for the SHRP2 dataset are provided: https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tanet_SHRP2_epoch30.pth
