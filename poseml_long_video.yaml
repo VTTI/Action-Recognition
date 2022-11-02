@@ -5,7 +5,8 @@ configFile: "/vtti/scratch/asonth/PoseML_data6sec_for_mmaction2/workdir_slowfast
 checkpoint: "/vtti/scratch/asonth/PoseML_data6sec_for_mmaction2/workdir_slowfast/epoch_65.pth"                # Path to checkpoint file
 # checkpoint: "/vtti/scratch/asonth/PoseML_mmaction2/tutorial_exps/epoch_20.pth"                # Path to checkpoint file
 
-label: "label_poseml.txt" # Path to label file
+label: "label_poseml.txt"    # Path to label file
+
 inputStep: 1                 # Input step for sampling frames 
 threshold: 0.01              # Recognition score threshold
 stride: 0                    # The prediction stride equals to stride * sample_length (sample_length indicates the size of temporal window from which you sample frames, which equals to clip_len x frame_interval). If set as 0, the prediction stride is 1
