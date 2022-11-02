@@ -59,12 +59,12 @@ Currently this repo supports three Action Recognition Models-
 ### [TSN](https://mmaction2.readthedocs.io/en/latest/recognition_models.html#tsn)
 This is the MMAction2 implementation of [Temporal segment networks: Towards good practices for deep action recognition](https://link.springer.com/chapter/10.1007/978-3-319-46484-8_2)
 
-Value of `CONFIG_FILE` for this case is `configs/recognition/tsn/tsn_r50_1x1x3_100e_kinetics400_rgb.py`
+Value of `configFile` in `poseml_long_video.yaml` for this case is `configs/recognition/tsn/tsn_r50_1x1x3_100e_kinetics400_rgb.py`
 
 This is the model pre-trained on Kinetics-400- https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tsn_r50_1x1x3_100e_kinetics400_rgb_20200614-e508be42.pth. Use this checkpoint only if training from scratch.
 
-To generate prediction for your videos based on our model trained on PoseML, download https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tsn_PoseML_epoch20.pth and move it `./checkpoints`
-Also, change the value of `label` in `poseml_long_video.yaml` to `"label_poseml.txt"`
+To generate prediction for your videos based on our model trained on PoseML, download https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tsn_PoseML_epoch20.pth and move it `./checkpoints`. Also, edit the value of `label` in `poseml_long_video.yaml`.
+Change the value of `label` in `poseml_long_video.yaml` to `"label_poseml.txt"`
 
 To generate prediction for your videos based on our model trained on SHRP2, download https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tanet_SHRP2_epoch10.pth and move it `./checkpoints`
 Also, change the value of `label` in `poseml_long_video.yaml` to `"label_shrp2.txt"`
@@ -88,7 +88,7 @@ Top 3 Accuracy: 88.54%
 ### [SlowFast](https://mmaction2.readthedocs.io/en/latest/recognition_models.html#slowfast)
 This is the MMAction2 implementation of [SlowFast Networks for Video Recognition](https://openaccess.thecvf.com/content_ICCV_2019/html/Feichtenhofer_SlowFast_Networks_for_Video_Recognition_ICCV_2019_paper.html)
 
-Value of `CONFIG_FILE` for this case is `configs/recognition/slowfast/slowfast_r50_4x16x1_256e_kinetics400_rgb.py`
+Value of `configFile` in `poseml_long_video.yaml` for this case is `configs/recognition/slowfast/slowfast_r50_4x16x1_256e_kinetics400_rgb.py`
 
 This is the model pre-trained on Kinetics-400- https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/slowfast_r50_256p_4x16x1_256e_kinetics400_rgb_20200728-145f1097.pth. Use this checkpoint only if training from scratch. 
 
@@ -118,7 +118,7 @@ Top 3 Accuracy: 87.97%
 ### [TANet](https://mmaction2.readthedocs.io/en/latest/recognition_models.html#tanet)
 This is the MMAction2 implementation of [TAM: Temporal Adaptive Module for Video Recognition](https://openaccess.thecvf.com/content/ICCV2021/html/Liu_TAM_Temporal_Adaptive_Module_for_Video_Recognition_ICCV_2021_paper.html)
 
-Value of `CONFIG_FILE` for this case is `configs/recognition/tanet/tanet_r50_dense_1x1x8_100e_kinetics400_rgb.py`
+Value of `configFile` in `poseml_long_video.yaml` for this case is `configs/recognition/tanet/tanet_r50_dense_1x1x8_100e_kinetics400_rgb.py`
 
 This is the model pre-trained on Kinetics-400- https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tanet_r50_dense_1x1x8_100e_kinetics400_rgb_20210219-032c8e94.pth. Use this checkpoint only if training from scratch. 
 
