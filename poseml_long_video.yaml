@@ -1,6 +1,6 @@
 configFile: "configs/recognition/tanet/tanet_r50_dense_1x1x8_100e_kinetics400_rgb.py" # Path to model config file
 
-checkpoint: "checkpoints/epoch_65.pth"                # Path to checkpoint file
+checkpoint: "checkpoints/tanet_r50_dense_1x1x8_100e_kinetics400_rgb_20210219-032c8e94.pth.pth" # Path to checkpoint file
 
 label: "label_poseml.txt"    # Path to label file
 
