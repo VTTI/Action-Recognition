@@ -61,7 +61,13 @@ This is the MMAction2 implementation of [Temporal segment networks: Towards good
 
 Value of `CONFIG_FILE` for this case is `configs/recognition/tsn/tsn_r50_1x1x3_100e_kinetics400_rgb.py`
 
-Download the checkpoint from https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tsn_r50_1x1x3_100e_kinetics400_rgb_20200614-e508be42.pth, and move it `./checkpoints`
+This is the model pre-trained on Kinetics-400- https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tsn_r50_1x1x3_100e_kinetics400_rgb_20200614-e508be42.pth. Use this checkpoint only if training from scratch.
+
+To generate prediction for your videos based on our model trained on PoseML, download https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tsn_PoseML_epoch20.pth and move it `./checkpoints`
+Also, change the value of `label` in `poseml_long_video.yaml` to `"label_poseml.txt"`
+
+To generate prediction for your videos based on our model trained on SHRP2, download https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tanet_SHRP2_epoch10.pth and move it `./checkpoints`
+Also, change the value of `label` in `poseml_long_video.yaml` to `"label_shrp2.txt"`
 
 <!--
 ![](sample/output/VID00026_0005_tsn_AdobeCreativeCloudExpress.gif) 
@@ -78,17 +84,19 @@ Top 3 Accuracy: 88.54%
 
 <img src="sample/tsn_confMat.png" width="60%" height="60%">
 
-The weights for the model trained on the PoseML dataset are provided: https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tsn_PoseML_epoch20.pth
-
-The weights for the model trained on the SHRP2 dataset are provided: https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tanet_SHRP2_epoch10.pth
-
 
 ### [SlowFast](https://mmaction2.readthedocs.io/en/latest/recognition_models.html#slowfast)
 This is the MMAction2 implementation of [SlowFast Networks for Video Recognition](https://openaccess.thecvf.com/content_ICCV_2019/html/Feichtenhofer_SlowFast_Networks_for_Video_Recognition_ICCV_2019_paper.html)
 
 Value of `CONFIG_FILE` for this case is `configs/recognition/slowfast/slowfast_r50_4x16x1_256e_kinetics400_rgb.py`
 
-Download the checkpoint from https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/slowfast_r50_256p_4x16x1_256e_kinetics400_rgb_20200728-145f1097.pth, and move it `./checkpoints`
+This is the model pre-trained on Kinetics-400- https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/slowfast_r50_256p_4x16x1_256e_kinetics400_rgb_20200728-145f1097.pth. Use this checkpoint only if training from scratch. 
+
+To generate prediction for your videos based on our model trained on PoseML, download https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/slowfast_PoseML6sec_epoch65.pth and move it `./checkpoints`
+Also, change the value of `label` in `poseml_long_video.yaml` to `"label_poseml.txt"`
+
+To generate prediction for your videos based on our model trained on SHRP2, download https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tanet_SHRP2_epoch95.pth and move it `./checkpoints`
+Also, change the value of `label` in `poseml_long_video.yaml` to `"label_shrp2.txt"`
 
 <!--
 ![](sample/output/VID00026_0005_slowfast_AdobeCreativeCloudExpress.gif) 
@@ -105,9 +113,6 @@ Top 3 Accuracy: 87.97%
 
 <img src="sample/slowfast_confMat.png" width="60%" height="60%">
 
-The weights for the model trained on the PoseML dataset are provided: https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/slowfast_PoseML6sec_epoch65.pth
-
-The weights for the model trained on the SHRP2 dataset are provided: https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tanet_SHRP2_epoch95.pth
 
 
 ### [TANet](https://mmaction2.readthedocs.io/en/latest/recognition_models.html#tanet)
@@ -115,7 +120,14 @@ This is the MMAction2 implementation of [TAM: Temporal Adaptive Module for Video
 
 Value of `CONFIG_FILE` for this case is `configs/recognition/tanet/tanet_r50_dense_1x1x8_100e_kinetics400_rgb.py`
 
-Download the checkpoint from https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tanet_r50_dense_1x1x8_100e_kinetics400_rgb_20210219-032c8e94.pth, and move it `./checkpoints`
+This is the model pre-trained on Kinetics-400- https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tanet_r50_dense_1x1x8_100e_kinetics400_rgb_20210219-032c8e94.pth. Use this checkpoint only if training from scratch. 
+
+To generate prediction for your videos based on our model trained on PoseML, download https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tanet_PoseML6sec_epoch35.pth and move it `./checkpoints`
+Also, change the value of `label` in `poseml_long_video.yaml` to `"label_poseml.txt"`
+
+To generate prediction for your videos based on our model trained on SHRP2, download https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tanet_SHRP2_epoch30.pth and move it `./checkpoints`
+Also, change the value of `label` in `poseml_long_video.yaml` to `"label_shrp2.txt"`
+
 
 <!--
 ![](sample/output/VID00026_0005_tanet_AdobeCreativeCloudExpress.gif) 
@@ -131,10 +143,6 @@ Top 1 Accuracy: 80.41%,
 Top 3 Accuracy: 90.72%
 
 <img src="sample/tam_confMat.png" width="60%" height="60%">
-
-The weights for the model trained on the PoseML dataset are provided: https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tanet_PoseML6sec_epoch35.pth
-
-The weights for the model trained on the SHRP2 dataset are provided: https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tanet_SHRP2_epoch30.pth
 
 
 ## Training one of the MMAction2 models
