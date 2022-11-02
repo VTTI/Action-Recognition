@@ -63,11 +63,11 @@ Value of `configFile` in `poseml_long_video.yaml` for this case is `configs/reco
 
 This is the model pre-trained on Kinetics-400- https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tsn_r50_1x1x3_100e_kinetics400_rgb_20200614-e508be42.pth. Use this checkpoint only if training from scratch.
 
-To generate prediction for your videos based on our model trained on PoseML, download https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tsn_PoseML_epoch20.pth and move it `./checkpoints`. Also, edit the value of `label` in `poseml_long_video.yaml`.
+To generate prediction for your videos based on our model trained on PoseML, download https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tsn_PoseML_epoch20.pth and move it `./checkpoints`. Also, edit the value of `checkpoints` in `poseml_long_video.yaml`.
 Change the value of `label` in `poseml_long_video.yaml` to `"label_poseml.txt"`
 
-To generate prediction for your videos based on our model trained on SHRP2, download https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tanet_SHRP2_epoch10.pth and move it `./checkpoints`
-Also, change the value of `label` in `poseml_long_video.yaml` to `"label_shrp2.txt"`
+To generate prediction for your videos based on our model trained on SHRP2, download https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tanet_SHRP2_epoch10.pth and move it `./checkpoints`. Also, edit the value of `checkpoints` in `poseml_long_video.yaml`.
+Change the value of `label` in `poseml_long_video.yaml` to "label_shrp2.txt"`
 
 <!--
 ![](sample/output/VID00026_0005_tsn_AdobeCreativeCloudExpress.gif) 
@@ -92,11 +92,11 @@ Value of `configFile` in `poseml_long_video.yaml` for this case is `configs/reco
 
 This is the model pre-trained on Kinetics-400- https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/slowfast_r50_256p_4x16x1_256e_kinetics400_rgb_20200728-145f1097.pth. Use this checkpoint only if training from scratch. 
 
-To generate prediction for your videos based on our model trained on PoseML, download https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/slowfast_PoseML6sec_epoch65.pth and move it `./checkpoints`
-Also, change the value of `label` in `poseml_long_video.yaml` to `"label_poseml.txt"`
+To generate prediction for your videos based on our model trained on PoseML, download https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/slowfast_PoseML6sec_epoch65.pth and move it `./checkpoints. Also, edit the value of `checkpoints` in `poseml_long_video.yaml`.
+Change the value of `label` in `poseml_long_video.yaml` to "label_poseml.txt"`
 
-To generate prediction for your videos based on our model trained on SHRP2, download https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tanet_SHRP2_epoch95.pth and move it `./checkpoints`
-Also, change the value of `label` in `poseml_long_video.yaml` to `"label_shrp2.txt"`
+To generate prediction for your videos based on our model trained on SHRP2, download https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tanet_SHRP2_epoch95.pth and move it `./checkpoints. Also, edit the value of `checkpoints` in `poseml_long_video.yaml`.
+Change the value of `label` in `poseml_long_video.yaml` to "label_shrp2.txt"`
 
 <!--
 ![](sample/output/VID00026_0005_slowfast_AdobeCreativeCloudExpress.gif) 
@@ -122,11 +122,11 @@ Value of `configFile` in `poseml_long_video.yaml` for this case is `configs/reco
 
 This is the model pre-trained on Kinetics-400- https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tanet_r50_dense_1x1x8_100e_kinetics400_rgb_20210219-032c8e94.pth. Use this checkpoint only if training from scratch. 
 
-To generate prediction for your videos based on our model trained on PoseML, download https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tanet_PoseML6sec_epoch35.pth and move it `./checkpoints`
-Also, change the value of `label` in `poseml_long_video.yaml` to `"label_poseml.txt"`
+To generate prediction for your videos based on our model trained on PoseML, download https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tanet_PoseML6sec_epoch35.pth and move it `./checkpoints. Also, edit the value of `checkpoints` in `poseml_long_video.yaml`.
+Change the value of `label` in `poseml_long_video.yaml` to "label_poseml.txt"`
 
-To generate prediction for your videos based on our model trained on SHRP2, download https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tanet_SHRP2_epoch30.pth and move it `./checkpoints`
-Also, change the value of `label` in `poseml_long_video.yaml` to `"label_shrp2.txt"`
+To generate prediction for your videos based on our model trained on SHRP2, download https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tanet_SHRP2_epoch30.pth and move it `./checkpoints. Also, edit the value of `checkpoints` in `poseml_long_video.yaml`.
+Change the value of `label` in `poseml_long_video.yaml` to "label_shrp2.txt"`
 
 
 <!--
