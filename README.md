@@ -24,7 +24,7 @@ We use in Dockerfile nvidia/cuda:11.3.0-cudnn8-devel-ubuntu20.04 as base image a
 
 `git clone https://github.com/VTTI/driver-secondary-action-recognition.git`
 
-`cd mmdaction2`
+`cd driver-secondary-action-recognition`
 
 `docker build . -t action-recognition`
  
