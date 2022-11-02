@@ -28,7 +28,7 @@ We use in Dockerfile nvidia/cuda:11.3.0-cudnn8-devel-ubuntu20.04 as base image a
 
 In the file `poseml_long_video.yaml`, replace the value of the parameters- `configFile`, `checkpoint`, and `label` with the required model parameters. We provide 3 trained models, and have provided instructions for them below. You can also make use of the different options from https://mmaction2.readthedocs.io/en/latest/recognition_models.html
 
-Create a `checkpoints` folder and download the chosen model checkpoint into this location. 
+Create a `checkpoints` folder and download the chosen model checkpoint (options and instructions provided below) into this location. 
 
 `docker build . -t action-recognition`
  
