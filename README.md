@@ -32,8 +32,7 @@ We use in Dockerfile nvidia/cuda:11.3.0-cudnn8-devel-ubuntu20.04 as base image a
 
 ( replace {{dataPath}} with the local folder on your computer containing [input folder] and where the outuput is expected to be stored)
 
-In the file `poseml_long_video.yaml`, replace the value of the parameters- `configFile`, `checkpoint`, and `label` with the required model parameters. We provide 3 models 
-The available options are provided in https://mmaction2.readthedocs.io/en/latest/recognition_models.html
+In the file `poseml_long_video.yaml`, replace the value of the parameters- `configFile`, `checkpoint`, and `label` with the required model parameters. We provide 3 trained models, and have provided instructions for them below. You can also make use of the different options from https://mmaction2.readthedocs.io/en/latest/recognition_models.html
 
 `python demo_long_video.py --input INPUT_VIDEO_PATH -- config latest_long_video.yaml  --output OUTPUT_VIDEO_PATH`
 
@@ -51,24 +50,6 @@ The initial few frames are required for instantiating the model, and there are n
 | . | . | . | . | | | | |
 
 
-## Training one of the MMAction2 models
-
-Firsly, prepare a folder `train` containing all the video files to be used for training. Create an empty text file `train.txt`. In each line of this text file, you wll have the video name, followed by a space, followed by its class index. Perform a similar action for the validation dataset (`val` video directory and `val.txt` text file)
-Ex-
-```
-VID00031_0001.mp4 1
-VID00031_0002.mp4 8
-VID00031_0003.mp4 8
-        .         .
-        .         .
-```
-
-In the Docker container, execute the command `python train.py CONFIG_FILE`
-
-Make the following changes in the `train.py` file-
-- Edit `cfg.model.cls_head.num_classes = 10` to the number of classes in your dataset
-- Modify the path `cfg.work_dir` to your required folder where all the model weights will be saved
-- Modify the paths of train videos, val videos, and their corresponding text files
 
 Currently this repo supports three Action Recognition Models-
 
@@ -151,3 +132,23 @@ Top 3 Accuracy: 90.72%
 The weights for the model trained on the PoseML dataset are provided: https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tanet_PoseML6sec_epoch35.pth
 
 The weights for the model trained on the SHRP2 dataset are provided: https://mirror.vtti.vt.edu/vtti/ctbs/action_recognition/tanet_SHRP2_epoch30.pth
+
+
+## Training one of the MMAction2 models
+
+Firsly, prepare a folder `train` containing all the video files to be used for training. Create an empty text file `train.txt`. In each line of this text file, you wll have the video name, followed by a space, followed by its class index. Perform a similar action for the validation dataset (`val` video directory and `val.txt` text file)
+Ex-
+```
+VID00031_0001.mp4 1
+VID00031_0002.mp4 8
+VID00031_0003.mp4 8
+        .         .
+        .         .
+```
+
+In the Docker container, execute the command `python train.py CONFIG_FILE`
+
+Make the following changes in the `train.py` file-
+- Edit `cfg.model.cls_head.num_classes = 10` to the number of classes in your dataset
+- Modify the path `cfg.work_dir` to your required folder where all the model weights will be saved
+- Modify the paths of train videos, val videos, and their corresponding text files
