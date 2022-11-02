@@ -32,7 +32,8 @@ We use in Dockerfile nvidia/cuda:11.3.0-cudnn8-devel-ubuntu20.04 as base image a
 
 ( replace {{dataPath}} with the local folder on your computer containing [input folder] and where the outuput is expected to be stored)
 
-In the file `poseml_long_video.yaml`, replace the value of the parameters- `configFile`, `checkpoint`, and `label` with the required model parameters. The available options are provided in https://mmaction2.readthedocs.io/en/latest/recognition_models.html
+In the file `poseml_long_video.yaml`, replace the value of the parameters- `configFile`, `checkpoint`, and `label` with the required model parameters. We provide 3 models 
+The available options are provided in https://mmaction2.readthedocs.io/en/latest/recognition_models.html
 
 `python demo_long_video.py --input INPUT_VIDEO_PATH -- config latest_long_video.yaml  --output OUTPUT_VIDEO_PATH`
 
