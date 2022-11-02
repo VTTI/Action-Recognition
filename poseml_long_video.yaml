@@ -1,9 +1,6 @@
-# configFile: "configs/recognition/tanet/tanet_r50_dense_1x1x8_100e_kinetics400_rgb.py" # Path to model config file
-configFile: "/vtti/scratch/asonth/PoseML_data6sec_for_mmaction2/workdir_slowfast/slowfast_r50_4x16x1_256e_kinetics400_rgb.py" # Path to model config file
-# configFile: "/vtti/scratch/asonth/PoseML_data_for_mmaction2/workdir_tanet/tanet_r50_dense_1x1x8_100e_kinetics400_rgb.py" # Path to model config file
+configFile: "configs/recognition/tanet/tanet_r50_dense_1x1x8_100e_kinetics400_rgb.py" # Path to model config file
 
 checkpoint: "/vtti/scratch/asonth/PoseML_data6sec_for_mmaction2/workdir_slowfast/epoch_65.pth"                # Path to checkpoint file
-# checkpoint: "/vtti/scratch/asonth/PoseML_mmaction2/tutorial_exps/epoch_20.pth"                # Path to checkpoint file
 
 label: "label_poseml.txt"    # Path to label file
 
