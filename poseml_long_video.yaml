@@ -3,6 +3,7 @@ configFile: "configs/recognition/tanet/tanet_r50_dense_1x1x8_100e_kinetics400_rg
 checkpoint: "checkpoints/tanet_r50_dense_1x1x8_100e_kinetics400_rgb_20210219-032c8e94.pth.pth" # Path to checkpoint file
 
 label: "label_poseml.txt"    # Path to label file
+# label: "label_shrp2.txt"    # Path to label file
 
 inputStep: 1                 # Input step for sampling frames 
 threshold: 0.01              # Recognition score threshold
