@@ -34,10 +34,10 @@ We use in Dockerfile nvidia/cuda:11.3.0-cudnn8-devel-ubuntu20.04 as base image a
 
 In the file `poseml_long_video.yaml`, replace the value of the parameters- `configFile`, `checkpoint`, and `label` with the required model parameters. We provide 3 trained models, and have provided instructions for them below. You can also make use of the different options from https://mmaction2.readthedocs.io/en/latest/recognition_models.html
 
-`python demo_long_video.py --input INPUT_VIDEO_PATH -- config latest_long_video.yaml  --output OUTPUT_VIDEO_PATH`
+`python demo_long_video.py --input INPUT_VIDEO_PATH -- config poseml_long_video.yaml  --output OUTPUT_VIDEO_PATH`
 
 Ex: 
-`python demo_long_video.py --input ./sample/input/input.mp4 --config latest_long_video.yaml --device cuda:0 --output ./sample/output/long_video.mp4`
+`python demo_long_video.py --input ./sample/input/input.mp4 --config poseml_long_video.yaml --device cuda:0 --output ./sample/output/long_video.mp4`
 
 The initial few frames are required for instantiating the model, and there are no predictions till then.
 
